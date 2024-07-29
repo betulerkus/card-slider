@@ -1,8 +1,6 @@
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     centeredSlides: false,
-    slidesPerGroupSkip: 1,
-    spaceBetween: 30,
     mousewheel: true,
     keyboard: {
       enabled: true,
@@ -11,9 +9,11 @@ var swiper = new Swiper(".mySwiper", {
       640: {
         slidesPerView: 2,
         slidesPerGroup: 2,
+        slidesPerGroupSkip: 2,
       },
       992: {slidesPerView: 3,
-          slidesPerGroup: 3},
+          slidesPerGroup: 3,
+          slidesPerGroupSkip: 3,},
     },
     scrollbar: {
       el: ".swiper-scrollbar",
